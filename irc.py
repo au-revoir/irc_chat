@@ -25,7 +25,7 @@ while 1:
           pass 
      if text.find("PING")!=-1:
           irc.send("PONG "+text.split()[1]+"\r\n") 
-     if text.lower().find(":@hi")!=-1: 
+     if text.lower().find(":@hey")!=-1: 
           irc.send("PRIVMSG "+channel+" :Hello!\r\n") 
      text="" 
 input()
