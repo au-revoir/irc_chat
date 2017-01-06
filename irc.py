@@ -5,7 +5,7 @@ server="irc.freenode.net"
 botnick="troll" 
 channel="##testbotgovind" 
 
-#Establish connection 
+#Establish TCP socket connection  
 irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 irc.connect((server,6667)) 
 irc.setblocking(False) 
